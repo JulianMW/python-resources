@@ -1,1 +1,3 @@
-"# python-resources" 
+# python-resources
+
+### Documenting some useful code
