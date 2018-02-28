@@ -56,7 +56,13 @@ for sample in samples_list:
         for maxff in maxff_list:
             for maxdd in maxdd_list:
                 for minss in minss_list:
-                    # Build a forest and compute the feature importances                    forest = ExtraTreesRegressor(n_estimators=nestt,                                                  max_features = maxff,                                                  max_depth = maxdd,                                                  min_samples_leaf = minss,                                                  n_jobs = processorsIn,                                                  random_state=int(random.random()*200))
+                    # Build a forest and compute the feature importances                    
+                    forest = ExtraTreesRegressor(n_estimators=nestt,                                                  
+                                                 max_features = maxff,                                                  
+                                                 max_depth = maxdd,                                                  
+                                                 min_samples_leaf = minss,                                                  
+                                                 n_jobs = processorsIn,                                                  
+                                                 random_state=int(random.random()*200))
                     forest.fit(x_train, y_train)
 
                     importances = forest.feature_importances_
