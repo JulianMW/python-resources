@@ -34,16 +34,25 @@ while True:
     except TypeError:
         print("not a valid type")
     except AssertionError:
-        print("your assertion raised an error")
+        print("your assertion raised an error.. number is not greater than zero")
+        print("auto-converting this to a positive integer")
+        x = abs(int(x))
     except:
         print("danger, this will catch ANY and EVERY other possible error... not just the ones you expect")
     else:
         print("thanks! this code is executed IF there is no error")
     finally:
         print("this code always gets executed REGARDLESS of any errors")
+        
+        
 
+# raising an error to pre-emptively terminate your code
+if anumber < 0:
+    raise RuntimeError("You can't use a negative number")
+ else:
+    print(math.sqrt(anumber))
 
-
+    
 # creating raising an exception
 class MyException(Exception)
     pass
