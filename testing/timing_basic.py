@@ -14,6 +14,8 @@ When its done it returns the time as a floating point value representing the tot
 
 from timeit import Timer
 
+
+# Simple timeing
 # Define a function to be timed
 def test1():
     l = []
@@ -28,3 +30,18 @@ t1 = Timer("test1()", "from __main__ import test1")
 
 # Run the Timer
 print("concat ",t1.timeit(number=1000), "milliseconds")
+
+
+
+
+# Timing comparison of Dictionary operations
+import random
+for i in range(10000,1000001,20000):
+    tget = timeit.Timer("x.get(random.randrange(%i),0)"%i,
+                     "from __main__ import random,x")
+    tset = timeit.Timer("x[random.randrange(%i)] = %i"%(i,i),
+                     "from __main__ import random,x")
+    x = {j:j for j in range(i)}
+    get_time = tget.timeit(number=1000)
+    set_time = tset.timeit(number=1000)
+    print("%d,%10.3f,%10.3f" % (i, get_time, set_time))
