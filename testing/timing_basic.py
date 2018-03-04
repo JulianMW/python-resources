@@ -20,6 +20,11 @@ def test1():
     for i in range(1000):
         l = l + [i]
         
-#declare a timer
+# Declare a timer
+# Note: "from __main__ import test1" ... this imports the test into a new timer namespace so that no variables interfere
+# and to try to ensure a clean testing space.
+# Also Note: you can declare the timer before declaring the function
 t1 = Timer("test1()", "from __main__ import test1")
+
+# Run the Timer
 print("concat ",t1.timeit(number=1000), "milliseconds")
