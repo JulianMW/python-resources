@@ -3,10 +3,6 @@
 ### List Operations
 | Operation | Big-O |
 | --------- | ----- |
-| ----- | ----------- |
-
-
-Operation 	Big-O Efficiency
 | index [] |	O(1) |
 | index assignment |	O(1) |
 | append |	O(1) |
