@@ -21,13 +21,20 @@
 ### Decorators:
 
 Unconditionally skip the decorated test. reason should describe why the test is being skipped.
+
 @unittest.skip(reason)
 
+
 Skip the decorated test if condition is true.
+
 @unittest.skipIf(condition, reason)
 
+
 Skip the decorated test unless condition is true.
+
 @unittest.skipUnless(condition, reason)
 
+
 Mark the test as an expected failure. If the test fails when run, the test is not counted as a failure.
+
 @unittest.expectedFailure
