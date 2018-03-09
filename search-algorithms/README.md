@@ -12,7 +12,7 @@ Loop through entire sequence. Performance:
 
 ### Binary Search
 
-Loop through entire sequence. Performance:
+Requires that list is sorted. Compares item. Performance:
 
 | Best | Worst | Average |
 | ---- | ----- | ------- |
