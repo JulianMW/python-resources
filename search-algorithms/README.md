@@ -4,6 +4,7 @@ include: big-O (min, average, max), resources/memory needed, data format require
 ## List Search Algorithms
 ### Sequential Search
 Loop through entire sequence. Performance:
+
 | Best | Worst | Average |
 | ---- | ----- | ------- |
 | O(1) | O(n) | O(n/2) |
@@ -12,6 +13,7 @@ Loop through entire sequence. Performance:
 ### Binary Search
 
 Loop through entire sequence. Performance:
+
 | Best | Worst | Average |
 | ---- | ----- | ------- |
 | O(1) | O(log n) | ? |
