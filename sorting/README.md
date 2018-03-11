@@ -48,4 +48,4 @@ So for large n if b is ~= n then k will be small, and we'll be closer to O(n).
 
 But if b is small, k is <= n^constant and we're around O(n log n)
 
-Uses a pivot value. Any pair after the pivot value where one is greater and the other smaller will be switched. When the left and right marks cross, thats where the pivot value is placed. The list is divided in two at this point and quicksort is recursively called on those two sublists.
+Uses a key for each number calculated as (number / keyToAccess) % base, to iteratively sort by digits from least important to most important
