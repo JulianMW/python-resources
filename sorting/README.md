@@ -31,6 +31,8 @@ Use when: list is mostly pre-sorted.
 ### **Heap Sort**
 O(n log n)
 
+Additional Space: none! (can be done in-place)
+
 Similar to Selection Sort, but faster since it uses a Heap data structure. It first finds the smallest (or largest) item in a list and inserts it into the Heap. Then it deconstructs the Heap into a list.
 
 
@@ -46,7 +48,7 @@ Requires extra storage.
 ### **Quick Sort**
 Average: O(n log n), Worst: O(n**2)
 
-Additional Space: O(log n)
+Additional Space: O(n)   (but there's a more complex in-place variant which is O(log n) )
 
 Uses a pivot value. Any pair after the pivot value where one is greater and the other smaller will be switched. When the left and right marks cross, thats where the pivot value is placed. The list is divided in two at this point and quicksort is recursively called on those two sublists. It helps a lot to choose the pivot value wisely (aiming for the median value).
 
