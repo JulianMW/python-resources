@@ -38,8 +38,14 @@ Uses a pivot value. Any pair after the pivot value where one is greater and the 
 
 
 ### Radix Sort
-O(d*(n+b)), 
-where d is the max # digits in input integers
-and b is the base for representing numbers (ex. for decimal b=10)
+O(d*(n+b))   or    O((n+b)*logb(k))
+
+where d is the # digits in our input integers, 
+k is the maximum possible value of d, 
+and b is the base for representing numbers (ex. for decimal b=10).
+
+So for large n if b is ~= n then k will be small, and we'll be closer to O(n).
+
+But if b is small, k is <= n^constant and we're around O(n log n)
 
 Uses a pivot value. Any pair after the pivot value where one is greater and the other smaller will be switched. When the left and right marks cross, thats where the pivot value is placed. The list is divided in two at this point and quicksort is recursively called on those two sublists.
