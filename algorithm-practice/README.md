@@ -13,5 +13,17 @@
 ### 3. Anagrams
 
 
-### 4. 
+### 4. Numeric
+#### Primes
+##### 1. Determine whether a number is prime
+##### 2. Find the largest prime smaller than x
+#### Conversions
+##### 1. Convert from base a to base b
+##### 2. Find the maximum number using N digits in base B
+#### Greatest Common Denominator
+##### 1. of #a and #b
+#### Factorial
+##### 1. Find the factorial of number N
+
+
 
