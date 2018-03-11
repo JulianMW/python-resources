@@ -67,7 +67,7 @@ But if b is small, k is <= n^constant and we're around O(n log n)
 Uses a key for each number calculated as (number / keyToAccess) % base, to iteratively sort by digits from least important to most important
 
 
+.
 
-
-
-[^footnote]: **bold** denotes particularly common sorts
+.
+**bold** denotes particularly common sorts
