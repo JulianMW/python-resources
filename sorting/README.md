@@ -35,3 +35,11 @@ Requires extra storage.
 Between O(n log n) and O(n**2)
 
 Uses a pivot value. Any pair after the pivot value where one is greater and the other smaller will be switched. When the left and right marks cross, thats where the pivot value is placed. The list is divided in two at this point and quicksort is recursively called on those two sublists.
+
+
+### Radix Sort
+O(d*(n+b)), 
+where d is the max # digits in input integers
+and b is the base for representing numbers (ex. for decimal b=10)
+
+Uses a pivot value. Any pair after the pivot value where one is greater and the other smaller will be switched. When the left and right marks cross, thats where the pivot value is placed. The list is divided in two at this point and quicksort is recursively called on those two sublists.
