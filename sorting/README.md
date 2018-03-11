@@ -24,6 +24,12 @@ Between O(n) and O(n**2)
 Calls the insertion sort repeatedly on sub-lists created by selecting every n'th item. Then combines all these and does a final insertion sort
 
 
+### Heap Sort
+O(n log n)
+
+Similar to Selection Sort, but faster since it uses a Heap data structure. It first finds the smallest (or largest) item in a list and inserts it into the Heap. Then it deconstructs the Heap into a list.
+
+
 ### Merge Sort
 O(n log n)
 
