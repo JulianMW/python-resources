@@ -14,3 +14,10 @@
 
 ## Ordered List Abstract
 (each item holds a relative position that is based upon some underlying characteristic of the item)
+
+## BST
+A searchable binary tree
+### BST traversals (left-to-right, etc.)
+
+## Heap
+a simple tree data structure, however a heap usually employs a max or min structure
