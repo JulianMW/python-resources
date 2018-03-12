@@ -5,7 +5,7 @@ def BinarySearch(array, target):
     upper_index = len(array) - 1
     
     while lower_index <= upper_index:
-        mid_index = ( upper_index + lower_index ) //2
+        mid_index = lower_index + ( upper_index - lower_index ) //2
         value = array[mid_index]
         
         if value == target:
