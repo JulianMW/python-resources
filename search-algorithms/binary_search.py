@@ -1,16 +1,17 @@
 
 
-def binary_search(array, target):
-    lower = 0
-    upper = len(array)
-    while lower < upper:     # exit when our indicies cross
-        x = lower + (upper - lower) // 2
-        val = array[x]
-        if target == val:
-            return x
-        elif target > val:
-            if lower == x:   # exit if x (our midpoint) == lower
-                break        # because no further iterations will make lower == upper
-            lower = x
-        elif target < val:
-            upper = x
+def BinarySearch(array, target):
+    lower_index = 0
+    upper_index = len(array) - 1
+    
+    while lower_index <= upper_index:
+        mid_index = ( upper_index + lower_index ) //2
+        value = array[mid_index]
+        
+        if value == target:
+            return mid_index
+        elif value < target:
+            lower_index = mid_index + 1
+        else:
+            upper_index = mid_index - 1
+    return False
