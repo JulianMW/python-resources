@@ -38,7 +38,9 @@ def binary_search_range(array, target):
             return x
         elif target > val:
             if lower == x:
-                break
+                if ( x > 0 and val > array[x-1] ) or ( x == 0 ):
+                    min_index = x
+                    break
             lower = x
         elif target < val:
             upper = x
