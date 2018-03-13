@@ -1,3 +1,9 @@
+"""
+
+Implements a basic min heap
+
+"""
+
 class BinHeap:
     def __init__(self):
         self.heapList = [0]     # Initialize with 0 to help with a division function (later)
