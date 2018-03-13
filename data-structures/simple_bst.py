@@ -2,12 +2,13 @@
 
 Implements a simple binary search tree structure in python
 
+The TreeNode class contains all node-specific data
+The BinarySearchTree class manages TreeNodes, and contains all BST functions
+
 """
 
 
-# Basic BST.
-# TreeNode class contains all node-specific data
-# BinarySearchTree manages TreeNodes, and contains all BST functions
+# contains all node-specific data
 class TreeNode:
     def __init__(self,key,val,left=None,right=None,parent=None):
         self.key = key
@@ -49,13 +50,16 @@ class TreeNode:
             self.leftChild.parent = self
         if self.hasRightChild():
             self.rightChild.parent = self
-
-
+            
+            
+            
+            
+# manages TreeNodes, and contains all BST functions
 class BinarySearchTree:
 
     def __init__(self):
         self.root = None
-        self.size = 0
+        self.size = 0                    # Tracks how many nodes/items are in the tree
 
     def length(self):
         return self.size
