@@ -1,25 +1,25 @@
 # Cheatsheet and Implementation of Various Sorting Algos
 
 ### Bubble Sort
-O(n**2)
+O(n<sup>2</sup>)
 
 Iterate through all sequential items repeatedly. Swap if first is larger than second.
 
 
 ### Selection Sort
-O(n**2), but typically faster than bubble
+O(n<sup>2</sup>), but typically faster than bubble
 
 Iterate through n times, and place the largest (/next largest etc..) item in it's correct spot
 
 
 ### Insertion Sort
-O(n**2)
+O(n<sup>2</sup>)
 
 Makes one pass through data, inserting each item into it's correct spot in a growing sublist seeded from value at position 0
 
 
 ### Shell Sort
-Between O(n) and O(n**2)
+Between O(n) and O(n<sup>2</sup>)
 
 Additional Space: none!
 
@@ -46,7 +46,7 @@ Requires extra storage.
 
 
 ### **Quick Sort**
-Average: O(n log n), Worst: O(n**2)
+Average: O(n log n), Worst: O(n<sup>2</sup>)
 
 Additional Space: O(n)   (but there's a more complex in-place variant which is O(log n) )
 
