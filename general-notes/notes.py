@@ -32,3 +32,12 @@ for counter, value in enumerate(my_list, counter_start_value):
 # Output:
 # 1 apple
 # 2 banana etc...
+
+
+
+
+# Lists
+# ------------------------------------------------ #
+
+# 'mylist.remove(value)' removes the first matching value, not a specific index:
+# 'del mylist[index]' removes the item by index
