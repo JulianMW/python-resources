@@ -24,8 +24,11 @@ Requires that list is sorted. Compares item. Performance:
 
 ### DFS for Binary Tree
 .   A
+
 .  / \
+
 . B   C
+
 where A := +
 
 #### Pre-order:    Self, Left, Right
