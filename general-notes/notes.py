@@ -1,3 +1,13 @@
+# Input
+# ------------------------------------------------ #
+
+# takes in a line of input, converts to a list split on ' '
+s = input().split()
+
+# ensures that list consists of integers (uses the fact that list is iterable)
+[int(z) for z in input().split()]
+
+
 # Comparisons
 # ------------------------------------------------ #
 
