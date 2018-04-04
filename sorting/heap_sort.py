@@ -1,5 +1,5 @@
 
-# Python program for implementation of heap Sort
+# Python program for implementation of heap Sort using MAXHEAP
  
 # To heapify subtree rooted at index i.
 # n is size of heap
@@ -44,4 +44,4 @@ heapSort(arr)
 n = len(arr)
 print ("Sorted array is")
 for i in range(n):
-    print ("%d" %arr[i]),
+    print ("%d" %arr[i])
