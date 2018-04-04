@@ -22,7 +22,7 @@ def heapify_helper(arr, n, i):
         
 def heapify(arr):
     n = len(arr)
-    for i in range(n, -1, -1):
+    for i in range(n//2, -1, -1):
         heapify_helper(arr, n, i)
         
         
@@ -31,4 +31,4 @@ def heapify(arr):
 for i in range(len(arr)):
     arr[0], arr[-1] = arr[-1], arr[0]
     print(arr.pop())
-heapify_helper(arr, len(arr), 0)
+    heapify_helper(arr, len(arr), 0)
