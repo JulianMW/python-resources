@@ -1,3 +1,5 @@
+# Implements a hash table with open addressing and NO delete functionality
+
 class HashTable:
     def __init__(self,length):
         self.data = [None]*length
