@@ -65,3 +65,9 @@ print(*inputter)
 arr = [[1,2,3],[4,5,6]]
 [x for x in zip(*arr)]
 # [(1, 4), (2, 5), (3, 6)]
+# USEFUL FOR ITERATING OVER COLUMNS OF AN ARRAY
+# ex. 
+for row in arr:
+    <do something with that row>
+for col in zip(*arr):
+    <do something with that column>
