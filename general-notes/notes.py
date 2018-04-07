@@ -51,3 +51,17 @@ for counter, value in enumerate(my_list, counter_start_value):
 
 # 'mylist.remove(value)' removes the first matching value, not a specific index:
 # 'del mylist[index]' removes the item by index
+
+# unpacking
+inputter = [[1,2,3],[4,5,6],[7,8,9]]
+print(*inputter)
+# [1,2,3],[4,5,6],[7,8,9]
+
+# zip() - creates a generator which will return tuples for the item 
+[x for x in zip([1,2,3],[4,5,6])]
+# [(1, 4), (2, 5), (3, 6)]
+
+# transposing an array as list of lists ( unpacking and zipping )
+arr = [[1,2,3],[4,5,6]]
+[x for x in zip(*arr)]
+# [(1, 4), (2, 5), (3, 6)]
