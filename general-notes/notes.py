@@ -1,3 +1,35 @@
+
+# Sorting
+# ------------------------------------------------ #
+
+# sorting a string 
+#(because string.sort() doesn't work... can't sort immutable object)
+''.join(sorted(a))
+#'ENOVWZ'
+
+# sorting a list
+my_list = [2, 1, 3, 5, 4]
+sorted(my_list)
+# [1, 2, 3, 4, 5]
+
+# sorting a list in-place
+my_list.sort()
+
+# sorting by a function
+# key will be a modification of x, where our lambda value is some iterator... 
+#...like it will evaluate to the items in our list one by one
+#(ex. even numbers first)
+my_list.sort(key = lambda x: x%2)
+
+# sort by, then by
+#(use a tuple to implement a hierarchy of sorts)
+#ex. sort by even, then by value
+my_list.sort(key = lambda x: (x%2,x))
+#and
+sorted_list = sorted(my_list, key = lambda x: (x%2,x))
+
+
+
 # Input
 # ------------------------------------------------ #
 
