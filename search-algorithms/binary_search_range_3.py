@@ -7,7 +7,7 @@ class Solution:
         start = 0
         end = len(A)-1
         while start<end:
-            midpoint = (start + end )/2
+            midpoint = (start + end )//2
             if A[midpoint] == target:
                 end = midpoint
             elif A[midpoint] < target:
@@ -19,7 +19,7 @@ class Solution:
         solution[0] = start
         end = len(A)-1
         while start<end:
-            midpoint = (start + end +1)/2
+            midpoint = (start + end +1)//2
             if A[midpoint] == target:
                 start = midpoint
             else:
