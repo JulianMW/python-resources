@@ -66,7 +66,7 @@ if isinstance(non_list, (list,)):
 # Built-ins
 # ------------------------------------------------ #
 
-# enumerate()
+# enumerate(iterable, start_value = 0)
 my_list = ['apple', 'banana', 'grapes', 'pear']
 counter_start_value = 1
 for counter, value in enumerate(my_list, counter_start_value):
